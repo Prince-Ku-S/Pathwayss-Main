@@ -67,7 +67,7 @@ const AuthPage = ({ isLogin: initialIsLogin, onLoginSuccess }) => {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch("https://pathwayss-backend.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: formData.email, password: formData.password }),
@@ -113,7 +113,7 @@ const AuthPage = ({ isLogin: initialIsLogin, onLoginSuccess }) => {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/register", {
+      const response = await fetch("https://pathwayss-backend.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -144,7 +144,7 @@ const AuthPage = ({ isLogin: initialIsLogin, onLoginSuccess }) => {
     setLoading(true)
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/verify-otp", {
+      const response = await fetch("https://pathwayss-backend.onrender.com/api/auth/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: formData.email, otp }),

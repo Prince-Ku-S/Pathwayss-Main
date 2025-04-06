@@ -62,7 +62,7 @@ const ProfilePage = () => {
     setLoading(true)
     try {
       const token = localStorage.getItem("token")
-      const response = await fetch("http://localhost:5000/api/user/profile", {
+      const response = await fetch("https://pathwayss-backend.onrender.com/api/user/profile", {
         headers: { Authorization: `Bearer ${token}` },
       })
 
@@ -97,7 +97,7 @@ const ProfilePage = () => {
     setUpdating(true)
     try {
       const token = localStorage.getItem("token")
-      const response = await fetch("http://localhost:5000/api/user/update-profile", {
+      const response = await fetch("https://pathwayss-backend.onrender.com/api/user/update-profile", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -139,7 +139,7 @@ const ProfilePage = () => {
         throw new Error("No token found")
       }
 
-      const response = await fetch("http://localhost:5000/api/user/upload-profile-image", {
+      const response = await fetch("https://pathwayss-backend.onrender.com/api/user/upload-profile-image", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
