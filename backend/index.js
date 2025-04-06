@@ -10,7 +10,11 @@ const app = express();
 
 // ✅ Middleware
 app.use(express.json()); // Parse JSON requests
-app.use(cors()); // Enable CORS for frontend access
+app.use(cors({
+  origin: ["https://pathwayss.in", "https://www.pathwayss.in"],
+  credentials: true
+}));
+
 
 // ✅ Routes
 app.use("/api/auth", authRoutes);
