@@ -20,8 +20,8 @@ function ContactSection() {
             <div className="flex gap-4">
               <SocialLink href="#" icon={<Twitter className="w-5 h-5" />} label="Twitter" />
               <SocialLink href="#" icon={<Facebook className="w-5 h-5" />} label="Facebook" />
-              <SocialLink href="#" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
-              <SocialLink href="#" icon={<Instagram className="w-5 h-5" />} label="Instagram" />
+              <SocialLink href="https://www.linkedin.com/company/pathwayss-in/posts/?feedView=all" icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
+              <SocialLink href="https://www.instagram.com/pathwayss.in?igsh=Yzg0a3plemNwOHJi" icon={<Instagram className="w-5 h-5" />} label="Instagram" />
             </div>
           </div>
 
@@ -44,7 +44,7 @@ function ContactSection() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-[#F5A623]" />
-                <span>team@pathwayss.com</span>
+                <span>team@pathwayss.in</span>
               </div>
             </div>
           </div>
