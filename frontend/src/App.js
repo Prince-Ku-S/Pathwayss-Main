@@ -11,6 +11,7 @@ import ProfilePage from "./pages/ProfilePage";
 import ServicesPage from "./pages/ServicesPage";
 import AuthPage from "./components/AuthPage";
 import BrochurePage from "./pages/BrochurePage";
+//import MentorSection from "./components/mentorsection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
               <ServicesSection />
               <PricingSection />
               {/*<TeamSection />*/}
+              {/*<MentorSection />*/}
               <ContactSection />
             </div>
           }
