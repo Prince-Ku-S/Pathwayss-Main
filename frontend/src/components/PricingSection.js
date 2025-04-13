@@ -1,4 +1,6 @@
 import { Check, HelpCircle } from "lucide-react"
+import { Link } from "react-router-dom";
+
 
 function PricingSection() {
   const pricingPlans = [
@@ -81,15 +83,18 @@ function PricingSection() {
                 </ul>
 
                 {/* Button */}
-                <button
-                  className={`w-full py-3 px-6 rounded-full text-lg font-semibold transition-all duration-300 ${
-                    plan.isPopular
-                      ? "bg-[#F5A623] hover:bg-[#d48c1f] text-white"
-                      : "bg-[#005577] hover:bg-[#003355] text-white"
-                  }`}
-                >
-                  Register Now
-                </button>
+                <Link to="/comingsoon">
+                  <button
+                    className={`w-full py-3 px-6 rounded-full text-lg font-semibold transition-all duration-300 ${
+                      plan.isPopular
+                        ? "bg-[#F5A623] hover:bg-[#d48c1f] text-white"
+                        : "bg-[#005577] hover:bg-[#003355] text-white"
+                    }`}
+                  >
+                    Register Now
+                  </button>
+                </Link>
+
               </div>
             </div>
           ))}

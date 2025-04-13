@@ -12,6 +12,7 @@ import ServicesPage from "./pages/ServicesPage";
 import AuthPage from "./components/AuthPage";
 import BrochurePage from "./pages/BrochurePage";
 //import MentorSection from "./components/mentorsection";
+import ComingSoonPage from "./pages/ComingSoonPage";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/dashboard" element={<ProfilePage />} />
         <Route path="/auth" element={<AuthPage isLogin={true} />} />
         <Route path="/resources" element={<BrochurePage />}/>
+        <Route path="/comingsoon" element={<ComingSoonPage/>}/>
       </Routes>
     </Router>
   );
